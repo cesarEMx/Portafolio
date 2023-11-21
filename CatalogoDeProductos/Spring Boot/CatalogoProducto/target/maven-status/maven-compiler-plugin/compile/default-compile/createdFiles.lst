@@ -1,0 +1,10 @@
+com\CatalogoDulces\nombreEmpresa\Modul\Producto.class
+com\CatalogoDulces\nombreEmpresa\Modul\stock.class
+com\CatalogoDulces\nombreEmpresa\Modul\venta.class
+com\CatalogoDulces\nombreEmpresa\NombreEmpresaApplication.class
+com\CatalogoDulces\nombreEmpresa\Controller\ProductoController.class
+com\CatalogoDulces\nombreEmpresa\Repository\MarcaRepository.class
+com\CatalogoDulces\nombreEmpresa\Modul\Marca.class
+com\CatalogoDulces\nombreEmpresa\Repository\ProductoRepository.class
+com\CatalogoDulces\nombreEmpresa\Modul\envios.class
+com\CatalogoDulces\nombreEmpresa\Controller\MarcaController.class
