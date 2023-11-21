@@ -1,2 +1,3 @@
 # Portafolio
-En estes repositorio se aloja algunos de los proyectos personales 
+Repositorio echo para mostrar proyectos personales 
+Cesar Esquivel Martínez.
