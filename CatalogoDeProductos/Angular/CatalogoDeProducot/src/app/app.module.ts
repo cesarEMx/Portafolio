@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -10,6 +9,7 @@ import { ProductoComponent } from './componentes/body/producto/producto.componen
 import { StockComponent } from './componentes/body/stock/stock.component';
 import { ProductoBuscarComponent } from './componentes/body/producto/producto-buscar/producto-buscar.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +20,14 @@ import { FormsModule } from '@angular/forms';
     ProductoComponent,
     StockComponent,
     ProductoBuscarComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

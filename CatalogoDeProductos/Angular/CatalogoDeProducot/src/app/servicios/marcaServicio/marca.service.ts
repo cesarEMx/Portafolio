@@ -9,7 +9,4 @@ export class MarcaService {
  
   constructor(private http: HttpClient) { }
 
-  buecarCliente(){
-    return this.http.get<>
-  }
 }
