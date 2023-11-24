@@ -5,6 +5,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { LoginComponent } from './componentes/body/login/login.component';
 import { ProductoComponent } from './componentes/body/producto/producto.component';
 import { ProductoBuscarComponent } from './componentes/body/producto/producto-buscar/producto-buscar.component';
+import { ProductoAgregarComponent } from './componentes/body/producto/producto-agregar/producto-agregar.component';
 
 const routes: Routes = [
 
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'footer',component: FooterComponent},
   {path: 'login', component:LoginComponent},
   {path:'prodcuto',component:ProductoComponent},
-  {path:'prodcuto/buscar',component:ProductoBuscarComponent}
+  {path:'prodcuto/buscar',component:ProductoBuscarComponent},
+  {path:'prodcuto/agregar',component:ProductoAgregarComponent}
 ];
 
 @NgModule({

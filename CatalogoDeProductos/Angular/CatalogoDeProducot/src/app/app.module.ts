@@ -10,6 +10,7 @@ import { StockComponent } from './componentes/body/stock/stock.component';
 import { ProductoBuscarComponent } from './componentes/body/producto/producto-buscar/producto-buscar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductoAgregarComponent } from './componentes/body/producto/producto-agregar/producto-agregar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     ProductoComponent,
     StockComponent,
-    ProductoBuscarComponent
+    ProductoBuscarComponent,
+    ProductoAgregarComponent
 
   ],
   imports: [

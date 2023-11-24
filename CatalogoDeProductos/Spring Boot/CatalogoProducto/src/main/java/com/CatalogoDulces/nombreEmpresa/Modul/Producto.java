@@ -32,7 +32,7 @@ public class Producto {
     String nombre;
     String descripcion;
     Double precio;
-    byte[] imagen;
+    String imagen;
     @ManyToOne
     @JoinColumn(name = "Marca_id_Marca")
     Marca marca;

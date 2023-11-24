@@ -11,7 +11,7 @@ private endPoint:string = "http://localhost:8080/productos";
   constructor(private http:HttpClient) {}
 
   public buscarId(id:number){
-    console.warn(id)
+
     return this.http.get<Producto>(this.endPoint + `/${id}`);
   }
 }

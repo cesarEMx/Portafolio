@@ -1,11 +1,11 @@
-
 import { Marca } from "./marcar";
 
 export interface Producto{
-    id?:Number;
+    id:number;
     nombre: String;
     descripcion: String;
     precio:Number;
-    imag?:ArrayBuffer;
-    marca:Marca
+    // imag?:ArrayBuffer;
+    imagen:String;
+    marca:Marca;
 }

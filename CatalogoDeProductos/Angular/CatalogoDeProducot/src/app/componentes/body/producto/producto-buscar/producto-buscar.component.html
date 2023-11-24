@@ -11,7 +11,7 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon1">ID</span>
       </div>
-      <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1"
+      <input type="number" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1"
      ngModel name="id">
     </div>
 
@@ -22,9 +22,75 @@
     </div>
   </form>
 
-  <form class="form-floating" *ngIf="estadoEnvio">
-    <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
-    <label for="floatingInputValue">Input with value</label>
-  </form>
+  <div class="container" *ngIf="estadoEnvio">
+    <div class="row">
+        <div class="col">
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating" >
+                <input type="email" class="form-control" id="floatingInputGrid" [placeholder]="producto.id" [value]="producto.id">
+                <label for="floatingInputGrid">Prodcuto id </label>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating" >
+                <input type="email" class="form-control" id="floatingInputGrid" [placeholder]="producto.nombre" [value]="producto.nombre">
+                <label for="floatingInputGrid">Prodcuto nombre</label>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating" >
+                <input type="email" class="form-control" id="floatingInputGrid" [placeholder]="producto.descripcion" [value]="producto.descripcion">
+                <label for="floatingInputGrid">Prodcuto descripcion</label>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating" >
+                <input type="email" class="form-control" id="floatingInputGrid" [placeholder]="producto.precio" [value]="producto.precio">
+                <label for="floatingInputGrid">Prodcuto precio $</label>
+              </div>
+            </div>
+          </div>
+        </div>
+    
 
+
+        <div class="col">
+
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating" >
+                <input type="email" class="form-control" id="floatingInputGrid" [placeholder]="producto.marca.nombre" [value]="producto.marca.nombre">
+                <label for="floatingInputGrid">Marca nombre</label>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating" >
+                <input type="email" class="form-control" id="floatingInputGrid" [placeholder]="producto.marca.descripcion" [value]="producto.marca.descripcion">
+                <label for="floatingInputGrid">Marca descripcion</label>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating" >
+                <input type="email" class="form-control" id="floatingInputGrid" [placeholder]="producto.marca.precentacion" [value]="producto.marca.precentacion">
+                <label for="floatingInputGrid">Marca precentacion (g)</label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <img [src]="producto.imagen" class="rounded mx-auto d-block" alt="...">
+  </div>
+  
 </div>

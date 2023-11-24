@@ -33,12 +33,12 @@ public class ProductoController {
     public List<Producto> allProdcutos(){
     return productoRepository.findAll();
     }
-    @GetMapping("/{id}")
-    public ResponseEntity<Producto> buscarId(@PathVariable Long id){
-        Producto producto_Id = productoRepository.findById(id).orElse(null);
-        return  ResponseEntity.ok(producto_Id);
+     @GetMapping ("/{id}")
+    public  ResponseEntity < Producto > buscarId ( @PathVariable Long  id  ) {
+        Producto  producto_Id = productoRepository.findById(id).orElse(null);
+        return ResponseEntity.ok(producto_Id);
     }
-     @PostMapping()
+     @PostMapping
     public ResponseEntity<Producto> guardarMarca(@RequestBody Producto producto) {
         Producto nueva_producto = productoRepository.save(producto);
         return new ResponseEntity<>(nueva_producto,HttpStatus.CREATED);
